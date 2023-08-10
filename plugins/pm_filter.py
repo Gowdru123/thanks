@@ -1909,10 +1909,10 @@ async def auto_filter(client, msg, spoll=False):
     #     )
     # else:
     if settings["button"]:
-        cap = f"<b>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ ☞ {message.from_user.mention}\n\nʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ ☞ {remaining_seconds} sᴇᴄᴏɴᴅs\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title} \n\n⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n</b>"
+        cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search} </b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 ➢ {message.chat.title} </i></b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐏𝐄𝐑𝐒𝐎𝐍 ➢ {message.from_user.mention}\n</i></b>\n©️@ROCKERSBACKUP"
     else:
-        # cap = f"<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
-        cap = f"<b>Hᴇʏ {message.from_user.mention}, Fᴏᴜɴᴅ {total_results} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\n\n</b>"
+        #cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search} </b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 ➢ {message.chat.title} </i></b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐏𝐄𝐑𝐒𝐎𝐍 ➢ {message.from_user.mention}\n</i></b>\n©️@ROCKERSBACKUP"    
+        cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search} </b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 ➢ {message.chat.title} </i></b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐏𝐄𝐑𝐒𝐎𝐍 ➢ {message.from_user.mention}\n</i></b>\n©️@ROCKERSBACKUP" 
         for file in files:
             cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
 
@@ -1922,14 +1922,12 @@ async def auto_filter(client, msg, spoll=False):
     #         await m.delete()
     #         try:
     #             if settings['auto_delete']:
-    #                 await asyncio.sleep(300)
-    #                 await hehe.delete()
-    #                 await message.delete()
+    #                 await asyncio.sleep(60)
+    #                 await hehe.delete()                
     #         except KeyError:
     #             await save_group_settings(message.chat.id, 'auto_delete', True)
-    #             await asyncio.sleep(300)
+    #             await asyncio.sleep(60)
     #             await hehe.delete()
-    #             await message.delete()
     #     except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
     #         pic = imdb.get('poster')
     #         poster = pic.replace('.jpg', "._V1_UX360.jpg")
@@ -1938,14 +1936,12 @@ async def auto_filter(client, msg, spoll=False):
     #         await m.delete()
     #         try:
     #             if settings['auto_delete']:
-    #                 await asyncio.sleep(300)
+    #                 await asyncio.sleep(60)
     #                 await hmm.delete()
-    #                 await message.delete()
     #         except KeyError:
     #             await save_group_settings(message.chat.id, 'auto_delete', True)
-    #             await asyncio.sleep(300)
+    #             await asyncio.sleep(60)
     #             await hmm.delete()
-    #             await message.delete()
     #     except Exception as e:
     #         logger.exception(e)
     #         #m=await message.reply_text("🔎") 
@@ -1953,28 +1949,24 @@ async def auto_filter(client, msg, spoll=False):
     #         await m.delete()
     #         try:
     #             if settings['auto_delete']:
-    #                 await asyncio.sleep(300)
+    #                 await asyncio.sleep(60)
     #                 await fek.delete()
-    #                 await message.delete()
     #         except KeyError:
     #             await save_group_settings(message.chat.id, 'auto_delete', True)
-    #             await asyncio.sleep(300)
+    #             await asyncio.sleep(60)
     #             await fek.delete()
-    #             await message.delete()
     # else:
     fuk = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
     
     await m.delete()
     try:
         if settings['auto_delete']:
-            await asyncio.sleep(300)
+            await asyncio.sleep(60)
             await fuk.delete()
-            await message.delete()
     except KeyError:
         await save_group_settings(message.chat.id, 'auto_delete', True)
-        await asyncio.sleep(300)
+        await asyncio.sleep(60)
         await fuk.delete()
-        await message.delete()
     # if spoll:
     #     await msg.message.delete()
 
@@ -2107,24 +2099,28 @@ async def manual_filters(client, message, text=False):
                                     try:
                                         if settings['auto_delete']:
                                             await joelkb.delete()
+                                            await message.delete()
                                     except KeyError:
                                         grpid = await active_connection(str(message.from_user.id))
                                         await save_group_settings(grpid, 'auto_delete', True)
                                         settings = await get_settings(message.chat.id)
                                         if settings['auto_delete']:
                                             await joelkb.delete()
+                                            await message.delete()
                                 else:
                                     try:
                                         if settings['auto_delete']:
-                                            await asyncio.sleep(600)
+                                            await asyncio.sleep(60)
                                             await joelkb.delete()
+                                            await message.delete()
                                     except KeyError:
                                         grpid = await active_connection(str(message.from_user.id))
                                         await save_group_settings(grpid, 'auto_delete', True)
                                         settings = await get_settings(message.chat.id)
                                         if settings['auto_delete']:
-                                            await asyncio.sleep(600)
+                                            await asyncio.sleep(60)
                                             await joelkb.delete()
+                                            await message.delete()
                             except KeyError:
                                 grpid = await active_connection(str(message.from_user.id))
                                 await save_group_settings(grpid, 'auto_ffilter', True)
@@ -2148,24 +2144,28 @@ async def manual_filters(client, message, text=False):
                                     try:
                                         if settings['auto_delete']:
                                             await joelkb.delete()
+                                            await message.delete()
                                     except KeyError:
                                         grpid = await active_connection(str(message.from_user.id))
                                         await save_group_settings(grpid, 'auto_delete', True)
                                         settings = await get_settings(message.chat.id)
                                         if settings['auto_delete']:
                                             await joelkb.delete()
+                                            await message.delete()
                                 else:
                                     try:
                                         if settings['auto_delete']:
-                                            await asyncio.sleep(600)
+                                            await asyncio.sleep(60)
                                             await joelkb.delete()
+                                            await message.delete()
                                     except KeyError:
                                         grpid = await active_connection(str(message.from_user.id))
                                         await save_group_settings(grpid, 'auto_delete', True)
                                         settings = await get_settings(message.chat.id)
                                         if settings['auto_delete']:
-                                            await asyncio.sleep(600)
+                                            await asyncio.sleep(60)
                                             await joelkb.delete()
+                                            await message.delete()
                             except KeyError:
                                 grpid = await active_connection(str(message.from_user.id))
                                 await save_group_settings(grpid, 'auto_ffilter', True)
@@ -2187,24 +2187,28 @@ async def manual_filters(client, message, text=False):
                                 try:
                                     if settings['auto_delete']:
                                         await joelkb.delete()
+                                        await message.delete()
                                 except KeyError:
                                     grpid = await active_connection(str(message.from_user.id))
                                     await save_group_settings(grpid, 'auto_delete', True)
                                     settings = await get_settings(message.chat.id)
                                     if settings['auto_delete']:
                                         await joelkb.delete()
+                                        await message.delete()
                             else:
                                 try:
                                     if settings['auto_delete']:
-                                        await asyncio.sleep(600)
+                                        await asyncio.sleep(60)
                                         await joelkb.delete()
+                                        await message.delete()
                                 except KeyError:
                                     grpid = await active_connection(str(message.from_user.id))
                                     await save_group_settings(grpid, 'auto_delete', True)
                                     settings = await get_settings(message.chat.id)
                                     if settings['auto_delete']:
-                                        await asyncio.sleep(600)
+                                        await asyncio.sleep(60)
                                         await joelkb.delete()
+                                        await message.delete()
                         except KeyError:
                             grpid = await active_connection(str(message.from_user.id))
                             await save_group_settings(grpid, 'auto_ffilter', True)
@@ -2226,24 +2230,28 @@ async def manual_filters(client, message, text=False):
                                 try:
                                     if settings['auto_delete']:
                                         await joelkb.delete()
+                                        await message.delete()
                                 except KeyError:
                                     grpid = await active_connection(str(message.from_user.id))
                                     await save_group_settings(grpid, 'auto_delete', True)
                                     settings = await get_settings(message.chat.id)
                                     if settings['auto_delete']:
                                         await joelkb.delete()
+                                        await message.delete()
                             else:
                                 try:
                                     if settings['auto_delete']:
-                                        await asyncio.sleep(600)
+                                        await asyncio.sleep(60)
                                         await joelkb.delete()
+                                        await message.delete()
                                 except KeyError:
                                     grpid = await active_connection(str(message.from_user.id))
                                     await save_group_settings(grpid, 'auto_delete', True)
                                     settings = await get_settings(message.chat.id)
                                     if settings['auto_delete']:
-                                        await asyncio.sleep(600)
+                                        await asyncio.sleep(60)
                                         await joelkb.delete()
+                                        await message.delete()
                         except KeyError:
                             grpid = await active_connection(str(message.from_user.id))
                             await save_group_settings(grpid, 'auto_ffilter', True)
@@ -2296,18 +2304,21 @@ async def global_filters(client, message, text=False):
                                             settings = await get_settings(message.chat.id)
                                             if settings['auto_delete']:
                                                 await joelkb.delete()
+                                                await message.delete()
                                     else:
                                         try:
                                             if settings['auto_delete']:
-                                                await asyncio.sleep(600)
+                                                await asyncio.sleep(60)
                                                 await joelkb.delete()
+                                                await message.delete()
                                         except KeyError:
                                             grpid = await active_connection(str(message.from_user.id))
                                             await save_group_settings(grpid, 'auto_delete', True)
                                             settings = await get_settings(message.chat.id)
                                             if settings['auto_delete']:
-                                                await asyncio.sleep(600)
+                                                await asyncio.sleep(60)
                                                 await joelkb.delete()
+                                                await message.delete()
                                 except KeyError:
                                     grpid = await active_connection(str(message.from_user.id))
                                     await save_group_settings(grpid, 'auto_ffilter', True)
@@ -2318,13 +2329,14 @@ async def global_filters(client, message, text=False):
                                 try:
                                     if settings['auto_delete']:
                                         await joelkb.delete()
+                                        await message.delete()
                                 except KeyError:
                                     grpid = await active_connection(str(message.from_user.id))
                                     await save_group_settings(grpid, 'auto_delete', True)
                                     settings = await get_settings(message.chat.id)
                                     if settings['auto_delete']:
                                         await joelkb.delete()
-                            
+                                        await message.delete()
                         else:
                             button = eval(btn)
                             joelkb = await client.send_message(
@@ -2343,24 +2355,28 @@ async def global_filters(client, message, text=False):
                                         try:
                                             if settings['auto_delete']:
                                                 await joelkb.delete()
+                                                await message.delete()
                                         except KeyError:
                                             grpid = await active_connection(str(message.from_user.id))
                                             await save_group_settings(grpid, 'auto_delete', True)
                                             settings = await get_settings(message.chat.id)
                                             if settings['auto_delete']:
                                                 await joelkb.delete()
+                                                await message.delete()
                                     else:
                                         try:
                                             if settings['auto_delete']:
-                                                await asyncio.sleep(600)
+                                                await asyncio.sleep(60)
                                                 await joelkb.delete()
+                                                await message.delete()
                                         except KeyError:
                                             grpid = await active_connection(str(message.from_user.id))
                                             await save_group_settings(grpid, 'auto_delete', True)
                                             settings = await get_settings(message.chat.id)
                                             if settings['auto_delete']:
-                                                await asyncio.sleep(600)
+                                                await asyncio.sleep(60)
                                                 await joelkb.delete()
+                                                await message.delete()
                                 except KeyError:
                                     grpid = await active_connection(str(message.from_user.id))
                                     await save_group_settings(grpid, 'auto_ffilter', True)
@@ -2371,12 +2387,14 @@ async def global_filters(client, message, text=False):
                                 try:
                                     if settings['auto_delete']:
                                         await joelkb.delete()
+                                        await message.delete()
                                 except KeyError:
                                     grpid = await active_connection(str(message.from_user.id))
                                     await save_group_settings(grpid, 'auto_delete', True)
                                     settings = await get_settings(message.chat.id)
                                     if settings['auto_delete']:
                                         await joelkb.delete()
+                                        await message.delete()
 
                     elif btn == "[]":
                         joelkb = await client.send_cached_media(
@@ -2394,24 +2412,28 @@ async def global_filters(client, message, text=False):
                                     try:
                                         if settings['auto_delete']:
                                             await joelkb.delete()
+                                            await message.delete()
                                     except KeyError:
                                         grpid = await active_connection(str(message.from_user.id))
                                         await save_group_settings(grpid, 'auto_delete', True)
                                         settings = await get_settings(message.chat.id)
                                         if settings['auto_delete']:
                                             await joelkb.delete()
+                                            await message.delete()
                                 else:
                                     try:
                                         if settings['auto_delete']:
-                                            await asyncio.sleep(600)
+                                            await asyncio.sleep(60)
                                             await joelkb.delete()
+                                            await message.delete()
                                     except KeyError:
                                         grpid = await active_connection(str(message.from_user.id))
                                         await save_group_settings(grpid, 'auto_delete', True)
                                         settings = await get_settings(message.chat.id)
                                         if settings['auto_delete']:
-                                            await asyncio.sleep(600)
+                                            await asyncio.sleep(60)
                                             await joelkb.delete()
+                                            await message.delete()
                             except KeyError:
                                 grpid = await active_connection(str(message.from_user.id))
                                 await save_group_settings(grpid, 'auto_ffilter', True)
@@ -2422,12 +2444,14 @@ async def global_filters(client, message, text=False):
                             try:
                                 if settings['auto_delete']:
                                     await joelkb.delete()
+                                    await message.delete()
                             except KeyError:
                                 grpid = await active_connection(str(message.from_user.id))
                                 await save_group_settings(grpid, 'auto_delete', True)
                                 settings = await get_settings(message.chat.id)
                                 if settings['auto_delete']:
                                     await joelkb.delete()
+                                    await message.delete()
 
                     else:
                         button = eval(btn)
@@ -2446,24 +2470,28 @@ async def global_filters(client, message, text=False):
                                     try:
                                         if settings['auto_delete']:
                                             await joelkb.delete()
+                                            await message.delete()
                                     except KeyError:
                                         grpid = await active_connection(str(message.from_user.id))
                                         await save_group_settings(grpid, 'auto_delete', True)
                                         settings = await get_settings(message.chat.id)
                                         if settings['auto_delete']:
                                             await joelkb.delete()
+                                            await message.delete()
                                 else:
                                     try:
                                         if settings['auto_delete']:
-                                            await asyncio.sleep(600)
+                                            await asyncio.sleep(60)
                                             await joelkb.delete()
+                                            await message.delete()
                                     except KeyError:
                                         grpid = await active_connection(str(message.from_user.id))
                                         await save_group_settings(grpid, 'auto_delete', True)
                                         settings = await get_settings(message.chat.id)
                                         if settings['auto_delete']:
-                                            await asyncio.sleep(600)
+                                            await asyncio.sleep(60)
                                             await joelkb.delete()
+                                            await message.delete()
                             except KeyError:
                                 grpid = await active_connection(str(message.from_user.id))
                                 await save_group_settings(grpid, 'auto_ffilter', True)
@@ -2474,12 +2502,14 @@ async def global_filters(client, message, text=False):
                             try:
                                 if settings['auto_delete']:
                                     await joelkb.delete()
+                                    await message.delete()
                             except KeyError:
                                 grpid = await active_connection(str(message.from_user.id))
                                 await save_group_settings(grpid, 'auto_delete', True)
                                 settings = await get_settings(message.chat.id)
                                 if settings['auto_delete']:
                                     await joelkb.delete()
+                                    await message.delete()
 
                                 
                 except Exception as e:
