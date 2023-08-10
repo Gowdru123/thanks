@@ -114,7 +114,7 @@
 <br>
 <br>
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Gowdru123/PM-Shortner-Bot0&branch=web&name=dqthefiledonor)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Gowdru123/PM-Shortner-Bot0&branch=main&name=dqthefiledonor)
 </details>
 
 <details><summary>Deploy To Heroku</summary>
