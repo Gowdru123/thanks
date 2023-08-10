@@ -108,6 +108,14 @@
 * Check [info.py](https://github.com/Singhsawan/Pmshortner2
 ) for more optional variables
 
+<details><summary>Deploy To Koyeb</summary>
+<br>
+<b>The fastest way to deploy the application is to click the Deploy to Koyeb button below.</b>
+<br>
+<br>
+
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Gowdru123/PM-Shortner-Bot0&branch=web&name=dqthefiledonor)
+</details>
 
 <details><summary>Deploy To Heroku</summary>
 <p>
